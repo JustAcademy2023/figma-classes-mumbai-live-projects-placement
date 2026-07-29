@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Figma Classes in Mumbai with Live Projects & Placement</title>
+<meta name="description" content="Best Figma classes in Mumbai with live projects and placement support. Course details, honest guides and a UI/UX roadmap, all in one place.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --ink:#171321;
+    --muted:#6C6580;
+    --line:#EAE4F2;
+    --red:#F24E1E;
+    --orange:#FF7262;
+    --purple:#A259FF;
+    --blue:#1ABCFE;
+    --green:#0ACF83;
+    --card:#fff;
+    --dark:#171321;
+    --radius:20px;
+    --max:1160px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Manrope',sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.display{font-family:'Sora',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  img,svg{display:block;max-width:100%;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(251,250,247,0.85);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:var(--max);margin:0 auto;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem;letter-spacing:-0.01em;color:var(--ink);}
+  .logo-mark{width:32px;height:32px;position:relative;}
+  .logo-mark .dot{position:absolute;border-radius:50%;}
+  .logo-mark .d1{width:14px;height:14px;background:var(--red);top:0;left:9px;animation:bob 3s ease-in-out infinite;}
+  .logo-mark .d2{width:14px;height:14px;background:var(--purple);top:9px;left:0;animation:bob 3s ease-in-out infinite 0.3s;}
+  .logo-mark .d3{width:14px;height:14px;background:var(--blue);top:9px;left:18px;animation:bob 3s ease-in-out infinite 0.6s;}
+  .logo-mark .d4{width:14px;height:14px;background:var(--green);top:18px;left:9px;animation:bob 3s ease-in-out infinite 0.9s;}
+  @keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(-3px);}}
+  nav.links{display:flex;gap:26px;font-size:0.92rem;font-weight:600;color:var(--muted);}
+  nav.links a:hover{color:var(--purple);}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 22px;border-radius:999px;
+    font-weight:700;font-size:0.9rem;
+    background:var(--ink);color:#fff;
+    box-shadow:0 10px 24px -10px rgba(23,19,33,0.5);
+    transition:transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    white-space:nowrap;
+  }
+  .btn:hover{transform:translateY(-2px) rotate(-1deg);background:var(--purple);}
+  .btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink);box-shadow:none;}
+  .btn.ghost:hover{border-color:var(--purple);color:var(--purple);transform:translateY(-2px);}
+  .btn.grad{
+    background:linear-gradient(100deg,var(--red),var(--purple) 55%,var(--blue));
+    box-shadow:0 12px 28px -10px rgba(162,89,255,0.55);
+  }
+  .btn.grad:hover{filter:brightness(1.08);}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;padding:100px 24px 80px;overflow:hidden;}
+  .confetti{position:absolute;border-radius:50%;opacity:0.5;filter:blur(0px);z-index:-1;animation:float 8s ease-in-out infinite;}
+  @keyframes float{0%,100%{transform:translateY(0) rotate(0deg);}50%{transform:translateY(-22px) rotate(8deg);}}
+  .hero-inner{display:grid;grid-template-columns:1.05fr 0.95fr;gap:50px;align-items:center;max-width:var(--max);margin:0 auto;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:0.76rem;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;
+    color:#fff;background:linear-gradient(100deg,var(--red),var(--purple));
+    padding:7px 14px;border-radius:999px;margin-bottom:22px;
+    box-shadow:0 8px 18px -8px rgba(162,89,255,0.5);
+  }
+  h1.hero-title{font-size:clamp(2.1rem,4.6vw,3.3rem);line-height:1.12;letter-spacing:-0.02em;margin:0 0 20px;color:var(--ink);}
+  h1.hero-title .u{
+    background:linear-gradient(100deg,var(--red),var(--purple) 55%,var(--blue));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero-sub{font-size:1.05rem;color:var(--muted);max-width:52ch;margin:0 0 32px;line-height:1.65;}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;}
+
+  /* Canvas + multiplayer cursor signature */
+  .canvas-card{
+    background:#fff;border:1px solid var(--line);border-radius:24px;
+    box-shadow:0 30px 60px -30px rgba(23,19,33,0.25);
+    overflow:hidden;position:relative;
+  }
+  .canvas-topbar{display:flex;align-items:center;gap:8px;padding:14px 16px;border-bottom:1px solid var(--line);}
+  .canvas-topbar .cdot{width:10px;height:10px;border-radius:50%;}
+  .canvas-topbar .cdot:nth-child(1){background:var(--red);}
+  .canvas-topbar .cdot:nth-child(2){background:var(--orange);}
+  .canvas-topbar .cdot:nth-child(3){background:var(--green);}
+  .canvas-topbar .fname{margin-left:8px;font-size:0.78rem;color:var(--muted);font-weight:600;}
+  .canvas-body{position:relative;padding:26px;min-height:280px;background:
+      linear-gradient(90deg, #F1EDF9 1px, transparent 1px) 0 0/24px 24px,
+      linear-gradient(#F1EDF9 1px, transparent 1px) 0 0/24px 24px;
+  }
+  .frame{border:1.5px solid var(--purple);border-radius:12px;position:relative;padding:14px;background:rgba(162,89,255,0.03);}
+  .frame .flabel{position:absolute;top:-22px;left:0;font-size:0.68rem;font-weight:700;color:var(--purple);}
+  .wire{background:#EFEAF9;border-radius:8px;margin-bottom:10px;}
+  .wire.w1{height:14px;width:60%;}
+  .wire.w2{height:34px;width:100%;background:linear-gradient(100deg,var(--red),var(--purple));opacity:0.18;}
+  .wire.w3{height:10px;width:80%;}
+  .wire.w4{height:10px;width:45%;}
+  .cursor{
+    position:absolute;display:flex;align-items:center;gap:5px;
+    animation:roam 6s ease-in-out infinite;
+  }
+  .cursor svg{filter:drop-shadow(0 2px 4px rgba(0,0,0,0.25));}
+  .cursor .tag{
+    font-size:0.68rem;font-weight:700;color:#fff;padding:2px 8px;border-radius:6px 6px 6px 0;white-space:nowrap;
+  }
+  .cursor.c1{top:30px;left:40px;animation-delay:0s;}
+  .cursor.c1 .tag{background:var(--red);}
+  .cursor.c2{top:120px;left:200px;animation-delay:1.5s;}
+  .cursor.c2 .tag{background:var(--blue);}
+  .cursor.c3{top:200px;left:60px;animation-delay:3s;}
+  .cursor.c3 .tag{background:var(--green);}
+  @keyframes roam{
+    0%{transform:translate(0,0);}
+    25%{transform:translate(30px,20px);}
+    50%{transform:translate(10px,-15px);}
+    75%{transform:translate(-20px,10px);}
+    100%{transform:translate(0,0);}
+  }
+
+  /* ---------- SECTION SHELLS ---------- */
+  section{padding:92px 24px;}
+  .section-head{max-width:640px;margin:0 auto 54px;text-align:center;}
+  .section-head .kicker{
+    font-size:0.76rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--orange);margin-bottom:12px;display:block;
+  }
+  .section-head h2{font-size:clamp(1.7rem,3vw,2.35rem);letter-spacing:-0.01em;margin:0 0 14px;color:var(--ink);}
+  .section-head p{color:var(--muted);font-size:1rem;line-height:1.65;}
+
+  .band-dark{background:var(--dark);color:#f4f1fa;}
+  .band-dark .section-head p{color:#b6adc9;}
+  .band-dark .section-head h2{color:#f4f1fa;}
+
+  /* ---------- CARDS ---------- */
+  .grid-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:var(--max);margin:0 auto;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-top:4px solid var(--purple);border-radius:16px;
+    padding:28px 24px;transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:nth-child(2){border-top-color:var(--red);}
+  .card:nth-child(3){border-top-color:var(--blue);}
+  .card:nth-child(4){border-top-color:var(--green);}
+  .card:nth-child(5){border-top-color:var(--orange);}
+  .card:nth-child(6){border-top-color:var(--purple);}
+  .card:hover{transform:translateY(-6px) rotate(-0.4deg);box-shadow:0 22px 40px -22px rgba(23,19,33,0.22);}
+  .card .icon{
+    width:46px;height:46px;border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    background:#F1EDF9;margin-bottom:16px;font-size:1.3rem;
+  }
+  .card h3{margin:0 0 8px;font-size:1.08rem;color:var(--ink);font-weight:700;}
+  .card p{margin:0;color:var(--muted);font-size:0.93rem;line-height:1.6;}
+
+  /* ---------- ROADMAP STRIP ---------- */
+  .roadmap{max-width:var(--max);margin:0 auto;}
+  .roadmap-track{display:flex;gap:0;overflow-x:auto;padding-bottom:8px;}
+  .rstep{
+    flex:0 0 auto;width:220px;background:#221c34;border-radius:16px;padding:22px;margin-right:16px;
+    border:1px solid #372c50;position:relative;
+  }
+  .rstep .rnum{
+    width:30px;height:30px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:0.85rem;color:#171321;margin-bottom:14px;
+  }
+  .rstep:nth-child(1) .rnum{background:var(--red);}
+  .rstep:nth-child(2) .rnum{background:var(--orange);}
+  .rstep:nth-child(3) .rnum{background:var(--green);}
+  .rstep:nth-child(4) .rnum{background:var(--blue);}
+  .rstep:nth-child(5) .rnum{background:var(--purple);color:#fff;}
+  .rstep h4{margin:0 0 8px;font-size:0.98rem;color:#f4f1fa;font-weight:700;}
+  .rstep p{margin:0;font-size:0.85rem;color:#b6adc9;line-height:1.55;}
+  .roadmap-cta{text-align:center;margin-top:36px;}
+
+  /* ---------- COURSE FEATURE ---------- */
+  .feature-card{
+    max-width:var(--max);margin:0 auto;
+    display:grid;grid-template-columns:1.2fr 1fr;
+    background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;
+  }
+  .fc-copy{padding:46px;}
+  .fc-copy .tag{
+    display:inline-block;font-size:0.72rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;
+    color:#fff;background:var(--green);padding:5px 12px;border-radius:999px;margin-bottom:16px;
+  }
+  .fc-copy h3{font-size:1.55rem;margin:0 0 14px;letter-spacing:-0.01em;color:var(--ink);}
+  .fc-copy p{color:var(--muted);line-height:1.7;margin:0 0 26px;}
+  .fc-visual{
+    position:relative;background:
+      radial-gradient(circle at 25% 30%, rgba(242,78,30,0.18), transparent 55%),
+      radial-gradient(circle at 75% 70%, rgba(26,188,254,0.18), transparent 55%),
+      radial-gradient(circle at 50% 50%, rgba(162,89,255,0.14), transparent 60%);
+    background-color:#F7F4FC;
+    display:flex;align-items:center;justify-content:center;min-height:230px;
+  }
+  .fc-visual .shape{
+    width:110px;height:110px;border-radius:32px;position:relative;
+    background:linear-gradient(135deg,var(--purple),var(--blue));
+    animation:float 5s ease-in-out infinite;
+  }
+  .fc-visual .shape::after{
+    content:"";position:absolute;width:60px;height:60px;border-radius:50%;
+    background:linear-gradient(135deg,var(--red),var(--orange));
+    top:-20px;right:-20px;
+  }
+  @media (max-width:900px){.feature-card{grid-template-columns:1fr;}}
+
+  /* ---------- WARNING / GUIDE CARD ---------- */
+  .warn-card{
+    max-width:var(--max);margin:0 auto;
+    background:#221c34;border-radius:24px;padding:42px;
+    display:flex;align-items:center;gap:30px;flex-wrap:wrap;color:#f4f1fa;
+  }
+  .warn-card .wbadge{
+    flex:0 0 auto;width:64px;height:64px;border-radius:18px;
+    background:linear-gradient(135deg,var(--red),var(--orange));
+    display:flex;align-items:center;justify-content:center;font-size:1.6rem;
+  }
+  .warn-card .wtext{flex:1;min-width:240px;}
+  .warn-card h3{margin:0 0 8px;font-size:1.25rem;color:#fff;}
+  .warn-card p{margin:0;color:#b6adc9;line-height:1.65;font-size:0.95rem;}
+  .warn-card .btn{flex:0 0 auto;}
+
+  /* ---------- BLOG CARDS ---------- */
+  .link-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:var(--max);margin:0 auto;}
+  .blog-card{
+    background:#fff;border:1px solid var(--line);border-radius:16px;
+    padding:0;overflow:hidden;display:flex;flex-direction:column;
+    transition:transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .blog-card:hover{transform:translateY(-6px);box-shadow:0 24px 44px -22px rgba(23,19,33,0.2);}
+  .blog-card .bc-top{padding:24px 24px 0;}
+  .blog-card .bc-tag{
+    display:inline-block;font-size:0.7rem;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;
+    color:#fff;padding:5px 11px;border-radius:999px;margin-bottom:14px;
+  }
+  .blog-card:nth-child(1) .bc-tag{background:var(--purple);}
+  .blog-card:nth-child(2) .bc-tag{background:var(--blue);}
+  .blog-card:nth-child(3) .bc-tag{background:var(--green);}
+  .blog-card h3{font-size:1.06rem;margin:0 0 10px;color:var(--ink);line-height:1.35;font-weight:700;}
+  .blog-card p{color:var(--muted);font-size:0.9rem;line-height:1.6;margin:0 0 20px;}
+  .blog-card .bc-bottom{
+    margin-top:auto;padding:16px 24px;border-top:1px solid var(--line);
+    display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:0.85rem;color:var(--purple);
+  }
+  .blog-card .bc-bottom .arrow{transition:transform 0.25s ease;}
+  .blog-card:hover .bc-bottom .arrow{transform:translateX(5px);}
+  @media (max-width:900px){.link-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:640px){.link-grid{grid-template-columns:1fr;}}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:760px;margin:0 auto;}
+  details{border-bottom:1px solid var(--line);padding:20px 4px;}
+  details summary{
+    cursor:pointer;font-weight:700;font-size:1.02rem;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--ink);
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{content:"+";font-size:1.4rem;color:var(--purple);transition:transform 0.25s ease;}
+  details[open] summary::after{transform:rotate(45deg);}
+  details p{color:var(--muted);line-height:1.7;margin:14px 0 0;font-size:0.95rem;}
+
+  /* ---------- CTA BANNER ---------- */
+  .cta-banner{
+    max-width:var(--max);margin:0 auto;
+    background:linear-gradient(100deg,var(--red),var(--purple) 55%,var(--blue));
+    border-radius:28px;padding:54px 44px;
+    display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;color:#fff;
+  }
+  .cta-banner h2{margin:0 0 8px;font-size:1.8rem;letter-spacing:-0.01em;color:#fff;}
+  .cta-banner p{margin:0;opacity:0.9;max-width:46ch;}
+  .cta-banner .btn{background:#171321;color:#fff;box-shadow:0 14px 30px -10px rgba(0,0,0,0.4);}
+  .cta-banner .btn:hover{background:#000;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--dark);color:#c9c1db;padding:64px 24px 30px;}
+  .foot-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;}
+  .foot-grid h4{font-size:0.83rem;text-transform:uppercase;letter-spacing:0.08em;color:#8a80a3;margin:0 0 18px;}
+  .foot-grid ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;}
+  .foot-grid a{color:#c9c1db;font-size:0.92rem;}
+  .foot-grid a:hover{color:var(--orange);}
+  .foot-bottom{
+    max-width:var(--max);margin:50px auto 0;padding-top:24px;border-top:1px solid #2e2547;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#5c5473;font-size:0.85rem;
+  }
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:900px){
+    .hero-inner{grid-template-columns:1fr;}
+    .grid-cards{grid-template-columns:1fr 1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    nav.links{display:none;}
+    .grid-cards{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr;}
+    .cta-banner{flex-direction:column;text-align:center;}
+    .warn-card{flex-direction:column;text-align:center;}
+    section{padding:66px 20px;}
+    .hero{padding:88px 20px 56px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="#top" class="logo">
+      <span class="logo-mark">
+        <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+      </span>
+      Figma Classes MUM
+    </a>
+    <nav class="links">
+      <a href="#why">Why Live Projects</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#course">Course</a>
+      <a href="#reads">Blog</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn grad" href="https://www.justacademy.co/course-detail/figma-training" target="_blank" rel="noopener">Explore Course →</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="confetti" style="width:60px;height:60px;background:var(--red);top:8%;left:4%;animation-delay:0s;"></div>
+    <div class="confetti" style="width:36px;height:36px;background:var(--blue);top:70%;left:8%;animation-delay:1.2s;"></div>
+    <div class="confetti" style="width:44px;height:44px;background:var(--green);top:15%;right:6%;animation-delay:2s;"></div>
+    <div class="confetti" style="width:28px;height:28px;background:var(--orange);top:80%;right:12%;animation-delay:0.6s;"></div>
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">Design Career Guide</span>
+        <h1 class="hero-title">Best <span class="u">Figma Classes</span> in Mumbai with Live Projects & Placement</h1>
+        <p class="hero-sub">Skip the toolbar-only tutorials. Learn Figma the way working designers actually use it, on real briefs, with real feedback, and a clear path to your first design job in Mumbai.</p>
+        <div class="hero-cta">
+          <a class="btn grad" href="https://www.justacademy.co/course-detail/figma-training" target="_blank" rel="noopener">Start Learning Figma</a>
+          <a class="btn ghost" href="#why">Why Live Projects Matter</a>
+        </div>
+      </div>
+      <div class="canvas-card">
+        <div class="canvas-topbar">
+          <span class="cdot"></span><span class="cdot"></span><span class="cdot"></span>
+          <span class="fname">checkout-flow-v3.fig</span>
+        </div>
+        <div class="canvas-body">
+          <div class="frame">
+            <span class="flabel">Mobile · Checkout</span>
+            <div class="wire w1"></div>
+            <div class="wire w2"></div>
+            <div class="wire w3"></div>
+            <div class="wire w4"></div>
+          </div>
+          <div class="cursor c1">
+            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M1 1 L1 13 L4.5 10 L7 15 L9 14 L6.5 9 L11 9 Z" fill="#F24E1E"/></svg>
+            <span class="tag">Aisha</span>
+          </div>
+          <div class="cursor c2">
+            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M1 1 L1 13 L4.5 10 L7 15 L9 14 L6.5 9 L11 9 Z" fill="#1ABCFE"/></svg>
+            <span class="tag">Rohan</span>
+          </div>
+          <div class="cursor c3">
+            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M1 1 L1 13 L4.5 10 L7 15 L9 14 L6.5 9 L11 9 Z" fill="#0ACF83"/></svg>
+            <span class="tag">You</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY LIVE PROJECTS -->
+  <section id="why">
+    <div class="section-head">
+      <span class="kicker">Why It Actually Works</span>
+      <h2>Tutorials teach the tool. Live projects teach the job.</h2>
+      <p>Knowing where the buttons are in Figma is not the same as knowing how to design something people would actually use.</p>
+    </div>
+    <div class="grid-cards">
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3>Real briefs, real constraints</h3>
+        <p>Design for an actual persona, an actual goal, and screen sizes you didn't choose yourself, just like a real job.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🧩</div>
+        <h3>Components that scale</h3>
+        <p>Build proper design systems with variants and Auto Layout instead of redrawing the same button forty times.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h3>Feedback that stings a little</h3>
+        <p>Honest critique from mentors, the kind that actually improves your portfolio instead of empty encouragement.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🖥️</div>
+        <h3>Dev Mode handoff</h3>
+        <p>Learn to hand off files developers actually enjoy working with, properly named layers and clean specs included.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📁</div>
+        <h3>A portfolio, not a certificate</h3>
+        <p>Walk away with case studies you can talk through confidently, not just a PDF nobody asked to see.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Placement support</h3>
+        <p>Mock interviews, portfolio reviews and real connections to companies hiring designers in Mumbai right now.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="band-dark" id="roadmap">
+    <div class="section-head">
+      <span class="kicker">The Bigger Picture</span>
+      <h2>Figma is one stop on a longer UI/UX road</h2>
+      <p>Here's roughly how the full path tends to look, from your first frame to your first offer.</p>
+    </div>
+    <div class="roadmap">
+      <div class="roadmap-track">
+        <div class="rstep"><div class="rnum">1</div><h4>Design Fundamentals</h4><p>Visual hierarchy, spacing and color, before you even open the tool.</p></div>
+        <div class="rstep"><div class="rnum">2</div><h4>Learn Figma Properly</h4><p>Auto Layout, components, variants and prototyping, practiced deliberately.</p></div>
+        <div class="rstep"><div class="rnum">3</div><h4>Live Client Projects</h4><p>Real briefs with real constraints, not another tutorial-following exercise.</p></div>
+        <div class="rstep"><div class="rnum">4</div><h4>Case Studies</h4><p>Turn your projects into a portfolio that explains your thinking, not just your screens.</p></div>
+        <div class="rstep"><div class="rnum">5</div><h4>Interviews & Placement</h4><p>Mock interviews, reviews, and real introductions to hiring teams.</p></div>
+      </div>
+    </div>
+    <div class="roadmap-cta">
+      <a class="btn ghost" style="border-color:#372c50;color:#f4f1fa;" href="https://www.justacademy.co/blog-detail/complete-uiux-designer-roadmap-for-2026" target="_blank" rel="noopener">See the Full 2026 UI/UX Roadmap →</a>
+    </div>
+  </section>
+
+  <!-- COURSE FEATURE -->
+  <section id="course">
+    <div class="feature-card">
+      <div class="fc-copy">
+        <span class="tag">Figma Training</span>
+        <h3>Learn Figma the way working designers do</h3>
+        <p>A hands-on Figma training program built around live client-style projects, honest feedback and placement support, designed specifically for Mumbai's design job market.</p>
+        <a class="btn grad" href="https://www.justacademy.co/course-detail/figma-training" target="_blank" rel="noopener">View Course Details →</a>
+      </div>
+      <div class="fc-visual">
+        <div class="shape"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARNING GUIDE -->
+  <section>
+    <div class="warn-card">
+      <div class="wbadge">⚠️</div>
+      <div class="wtext">
+        <h3>Before you enroll anywhere, read this first</h3>
+        <p>Not every Figma course out there is built the same way. A quick, honest guide on exactly what to check before you hand over your money to any course, including this one.</p>
+      </div>
+      <a class="btn" href="https://www.justacademy.co/blog-detail/dont-join-a-figma-course-until-you-read-this-guide" target="_blank" rel="noopener">Read the Guide →</a>
+    </div>
+  </section>
+
+  <!-- BLOGS -->
+  <section id="reads">
+    <div class="section-head">
+      <span class="kicker">Go Deeper</span>
+      <h2>Worth reading before you decide</h2>
+      <p>Three reads that go further than this page can, on the classes themselves, what to watch out for, and where the wider design career road leads.</p>
+    </div>
+    <div class="link-grid">
+      <a class="blog-card" href="https://www.justacademy.co/blog-detail/best-figma-classes-in-mumbai-with-live-projects-placement" target="_blank" rel="noopener">
+        <div class="bc-top">
+          <span class="bc-tag">Course Guide</span>
+          <h3>Best Figma Classes in Mumbai with Live Projects & Placement</h3>
+          <p>A full breakdown of what genuinely good Figma classes in Mumbai look like, live projects included.</p>
+        </div>
+        <div class="bc-bottom">Read the blog <span class="arrow">→</span></div>
+      </a>
+      <a class="blog-card" href="https://www.justacademy.co/blog-detail/dont-join-a-figma-course-until-you-read-this-guide" target="_blank" rel="noopener">
+        <div class="bc-top">
+          <span class="bc-tag">Read First</span>
+          <h3>Don't Join a Figma Course Until You Read This Guide</h3>
+          <p>The honest checklist to run through before committing money or months to any design course.</p>
+        </div>
+        <div class="bc-bottom">Read the blog <span class="arrow">→</span></div>
+      </a>
+      <a class="blog-card" href="https://www.justacademy.co/blog-detail/complete-uiux-designer-roadmap-for-2026" target="_blank" rel="noopener">
+        <div class="bc-top">
+          <span class="bc-tag">Roadmap</span>
+          <h3>Complete UI/UX Designer Roadmap for 2026</h3>
+          <p>Where Figma fits into the bigger picture of becoming a UI/UX designer this year.</p>
+        </div>
+        <div class="bc-bottom">Read the blog <span class="arrow">→</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-head">
+      <span class="kicker">Quick Answers</span>
+      <h2>Before you hit enroll</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Do I need any design background to start?</summary>
+        <p>No, most learners start with zero design experience. Fundamentals are covered before you touch the tool itself.</p>
+      </details>
+      <details>
+        <summary>What makes "live projects" different from a tutorial?</summary>
+        <p>Live projects come with real constraints and real feedback, the two things a tutorial simply can't replicate.</p>
+      </details>
+      <details>
+        <summary>Will this actually help me get placed?</summary>
+        <p>Placement support works alongside your portfolio, mock interviews, reviews and real introductions to hiring teams.</p>
+      </details>
+      <details>
+        <summary>Where should I start?</summary>
+        <p>Start with the course page, skim the roadmap above, then read both guides for extra context before deciding.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section>
+    <div class="cta-banner">
+      <div>
+        <h2>Ready to open your first real file?</h2>
+        <p>Join a Figma training program built around live projects and genuine placement support.</p>
+      </div>
+      <a class="btn" href="https://www.justacademy.co/course-detail/figma-training" target="_blank" rel="noopener">Enroll in the Course →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-grid">
+    <div>
+      <div class="logo" style="margin-bottom:14px;color:#f4f1fa;">
+        <span class="logo-mark">
+          <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span><span class="dot d4"></span>
+        </span>
+        Figma Classes MUM
+      </div>
+      <p style="color:#8a80a3;font-size:0.9rem;line-height:1.6;max-width:32ch;">The best Figma classes in Mumbai with live projects and placement support, all in one page.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="#why">Why Live Projects</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Course</h4>
+      <ul>
+        <li><a href="https://www.justacademy.co/course-detail/figma-training" target="_blank" rel="noopener">Figma Training</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Read</h4>
+      <ul>
+        <li><a href="https://www.justacademy.co/blog-detail/best-figma-classes-in-mumbai-with-live-projects-placement" target="_blank" rel="noopener">Best Figma Classes Guide</a></li>
+        <li><a href="https://www.justacademy.co/blog-detail/dont-join-a-figma-course-until-you-read-this-guide" target="_blank" rel="noopener">Read Before You Enroll</a></li>
+        <li><a href="https://www.justacademy.co/blog-detail/complete-uiux-designer-roadmap-for-2026" target="_blank" rel="noopener">UI/UX Roadmap 2026</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 Figma Classes MUM, a community learning guide.</span>
+    <span>Made with real frames, not just wireframes</span>
+  </div>
+</footer>
+
+</body>
+</html>
